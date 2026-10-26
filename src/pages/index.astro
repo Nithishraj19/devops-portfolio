@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/experience.css';
 import { projects, skillGroups } from '../data/portfolio';
 ---
 <!doctype html>
@@ -29,6 +30,7 @@ import { projects, skillGroups } from '../data/portfolio';
         </button>
         <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
           <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
           <a href="#capabilities">Capabilities</a>
           <a href="#approach">Approach</a>
           <a class="nav-contact" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
@@ -73,6 +75,61 @@ import { projects, skillGroups } from '../data/portfolio';
           <div class="strip-point"><span class="point-number">01</span><div><strong>Automate the path</strong><p>Make build and release steps repeatable.</p></div></div>
           <div class="strip-point"><span class="point-number">02</span><div><strong>See the system</strong><p>Use signals and alerts to understand health.</p></div></div>
           <div class="strip-point"><span class="point-number">03</span><div><strong>Plan for failure</strong><p>Validate changes and keep recovery in view.</p></div></div>
+        </section>
+
+        <section class="experience-section section-wrap" id="experience">
+          <div class="section-heading section-heading-compact">
+            <div><span class="section-kicker">PROFESSIONAL EXPERIENCE</span><h2>Experience in <em>practice.</em></h2></div>
+            <p class="section-heading-copy">Professional roles across DevOps operations, cloud infrastructure, application delivery, and monitoring. Responsibilities are described without unverified performance metrics.</p>
+          </div>
+
+          <div class="experience-list">
+            <article class="experience-entry">
+              <div class="experience-date-block">
+                <span class="experience-date">MAR 2024 — PRESENT</span>
+                <span class="experience-timeline-mark" aria-hidden="true"></span>
+              </div>
+              <div class="experience-main">
+                <div class="experience-title-row">
+                  <div>
+                    <h3>Senior Software Engineer — DevOps</h3>
+                    <p class="experience-company">Kasplo <span>·</span> Full-time</p>
+                  </div>
+                  <span class="experience-role-tag">DEVOPS / CLOUD</span>
+                </div>
+                <ul class="experience-bullets">
+                  <li>Contribute to DevOps and infrastructure work across AWS and Linux environments, supporting application delivery and day-to-day operations.</li>
+                  <li>Work with CI/CD and containerized delivery workflows using Jenkins, Docker, and Kubernetes/EKS, including deployment validation and rollback practices where applicable.</li>
+                  <li>Work with AWS infrastructure and services such as EC2, VPC, IAM, ECR/EKS, load balancing, S3, RDS, and CloudWatch as relevant to the environment.</li>
+                  <li>Support observability and operational automation with monitoring tools, logs, Bash/Python scripting, and messaging/email infrastructure components where applicable.</li>
+                </ul>
+                <div class="experience-tech"><span>AWS</span><span>Linux</span><span>Jenkins</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Observability</span></div>
+              </div>
+            </article>
+
+            <article class="experience-entry">
+              <div class="experience-date-block">
+                <span class="experience-date">JAN 2020 — MAR 2024</span>
+                <span class="experience-timeline-mark" aria-hidden="true"></span>
+              </div>
+              <div class="experience-main">
+                <div class="experience-title-row">
+                  <div>
+                    <h3>DevOps Engineer</h3>
+                    <p class="experience-company">Itrust Soft Solutions</p>
+                  </div>
+                  <span class="experience-role-tag">DEVOPS / OPERATIONS</span>
+                </div>
+                <ul class="experience-bullets">
+                  <li>Worked with Linux and Windows environments, supporting application runtimes and monitoring/log analysis using tools such as Splunk and AppDynamics.</li>
+                  <li>Supported application delivery workflows involving Jenkins, Maven, Git, and application servers including Tomcat, JBoss, and WebSphere.</li>
+                  <li>Used SonarQube for code-quality checks and worked with Docker and Kubernetes as part of container-related workflows.</li>
+                  <li>Contributed to infrastructure automation using Terraform and Ansible, including AWS resources such as EC2, load balancing, and S3.</li>
+                </ul>
+                <div class="experience-tech"><span>Linux</span><span>Splunk</span><span>Jenkins</span><span>Maven</span><span>Terraform</span><span>Ansible</span><span>AWS</span></div>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section class="work-section section-wrap" id="work">
