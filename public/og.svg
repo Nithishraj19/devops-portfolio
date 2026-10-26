@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1522"/><stop offset="1" stop-color="#070b12"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#56cfff" stop-opacity=".2"/><stop offset="1" stop-color="#56cfff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="950" cy="290" r="300" fill="url(#glow)"/>
+  <g fill="none" stroke="#62d4ff" stroke-opacity=".48"><circle cx="950" cy="290" r="145" stroke-width="2"/><circle cx="950" cy="290" r="117" stroke-width="1"/><circle cx="950" cy="290" r="88" stroke-width="1" stroke-dasharray="7 12"/></g>
+  <circle cx="950" cy="290" r="58" fill="#62d4ff" fill-opacity=".12" stroke="#62d4ff" stroke-width="2"/>
+  <circle cx="950" cy="290" r="24" fill="#e9faff" fill-opacity=".8"/>
+  <text x="94" y="105" fill="#a3e5ff" font-family="Arial, sans-serif" font-size="20" letter-spacing="5">ENGINEERING PORTFOLIO / 2026</text>
+  <text x="90" y="255" fill="#f2f7fa" font-family="Arial, sans-serif" font-weight="700" font-size="80">Nithish Raj</text>
+  <text x="94" y="320" fill="#b6cbe3" font-family="Arial, sans-serif" font-size="34">Senior DevOps Engineer</text>
+  <text x="94" y="390" fill="#a3e5ff" font-family="Arial, sans-serif" font-size="24">AWS · CI/CD · Infrastructure · Observability</text>
+  <path d="M94 460H520" stroke="#17283e" stroke-width="2"/>
+  <text x="94" y="510" fill="#778ba5" font-family="Arial, sans-serif" font-size="21">Build. Ship. Observe. Improve.</text>
+</svg>

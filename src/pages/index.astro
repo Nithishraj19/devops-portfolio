@@ -1,0 +1,198 @@
+---
+import '../styles/global.css';
+import { projects, skillGroups } from '../data/portfolio';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070b12" />
+    <meta name="description" content="Nithish Raj — Senior DevOps Engineer focused on AWS, CI/CD, infrastructure automation, container platforms and observability. Explore nine DevOps portfolio projects." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nithish Raj — DevOps Engineering Portfolio" />
+    <meta property="og:description" content="Build. Ship. Observe. Improve. Explore DevOps projects across cloud infrastructure, delivery systems, observability and secure pipelines." />
+    <meta property="og:image" content="/og.svg" />
+    <title>Nithish Raj — DevOps Engineering Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Nithish Raj home">
+          <span class="brand-mark" aria-hidden="true">N<span>//</span></span>
+          <span class="brand-copy"><strong>NITHISH RAJ</strong><small>DEVOPS / CLOUD ENGINEERING</small></span>
+        </a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#approach">Approach</a>
+          <a class="nav-contact" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="hero section-wrap" id="top">
+          <div class="hero-copy">
+            <div class="overline"><span class="status-dot"></span> ENGINEERING PORTFOLIO <span class="overline-divider">/</span> 2026</div>
+            <h1>Engineer boldly.<br /><em>Operate reliably.</em></h1>
+            <p class="hero-intro">I'm <strong>Nithish Raj</strong> — a DevOps engineer working across cloud infrastructure, delivery automation and operational visibility. I like systems that are understandable, repeatable and ready to recover.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
+              <a class="button button-quiet" href="/Nithish_Raj_DevOps_Resume.pdf" target="_blank" rel="noreferrer">View resume <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-meta">
+              <div><span class="meta-label">FOCUS</span><span>DevOps · AWS · CI/CD</span></div>
+              <div><span class="meta-label">BASE</span><span>Chennai, India</span></div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="JARVIS-inspired arc reactor and delivery pipeline visual" role="group">
+            <div class="visual-topline"><span>J.A.R.V.I.S. / CORE</span><span class="visual-live"><i></i> SYSTEMS ONLINE</span></div>
+            <div class="reactor-stage">
+              <div class="reactor-grid" aria-hidden="true"></div>
+              <div class="reactor-orbit reactor-orbit-one" aria-hidden="true"></div><div class="reactor-orbit reactor-orbit-two" aria-hidden="true"></div>
+              <img class="reactor-art" src="/arc-reactor.webp" alt="Futuristic arc reactor with a bright blue energy core, metallic graphite and gold rings, and restrained red accents" width="230" height="222" fetchpriority="high" />
+              <span class="orbit-node node-one" aria-hidden="true"></span><span class="orbit-node node-two" aria-hidden="true"></span><span class="orbit-node node-three" aria-hidden="true"></span>
+              <div class="reactor-caption"><span>JARVIS SYSTEMS / 001</span><strong>Core <b>→</b> Online</strong></div>
+            </div>
+            <div class="visual-terminal">
+              <div class="terminal-head"><span class="terminal-dots"><i></i><i></i><i></i></span><span>delivery.flow</span><span class="terminal-state">REFERENCE MODEL</span></div>
+              <div class="terminal-flow"><span>commit</span><b>›</b><span>build</span><b>›</b><span>verify</span><b>›</b><span class="flow-highlight">deploy</span></div>
+              <div class="terminal-foot"><span><i></i> Observability included</span><span>TRACE / 0x01</span></div>
+            </div>
+            <div class="visual-index">NR <span>•</span> INFRASTRUCTURE / DELIVERY / RELIABILITY</div>
+          </div>
+          <div class="hero-bottom-rule"><span>SCROLL TO EXPLORE</span><span>01 — 09 / PROJECT INDEX</span></div>
+        </section>
+
+        <section class="intro-strip section-wrap" aria-label="Portfolio summary">
+          <div class="strip-lead"><span class="section-kicker">THE THROUGH-LINE</span><p>Less hand-off friction.<br /><strong>More dependable delivery.</strong></p></div>
+          <div class="strip-point"><span class="point-number">01</span><div><strong>Automate the path</strong><p>Make build and release steps repeatable.</p></div></div>
+          <div class="strip-point"><span class="point-number">02</span><div><strong>See the system</strong><p>Use signals and alerts to understand health.</p></div></div>
+          <div class="strip-point"><span class="point-number">03</span><div><strong>Plan for failure</strong><p>Validate changes and keep recovery in view.</p></div></div>
+        </section>
+
+        <section class="work-section section-wrap" id="work">
+          <div class="section-heading">
+            <div><span class="section-kicker">SELECTED ENGINEERING WORK</span><h2>Projects with a <em>purpose.</em></h2></div>
+            <p class="section-heading-copy">A practical portfolio of delivery workflows, cloud designs, observability and messaging patterns. Each repository describes what is implemented and what is a reference design.</p>
+          </div>
+          <div class="work-toolbar">
+            <div class="filter-group" role="group" aria-label="Filter projects">
+              <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All <span>09</span></button>
+              <button class="filter-button" type="button" data-filter="delivery" aria-pressed="false">Delivery</button>
+              <button class="filter-button" type="button" data-filter="cloud" aria-pressed="false">Cloud</button>
+              <button class="filter-button" type="button" data-filter="observability" aria-pressed="false">Observability</button>
+              <button class="filter-button" type="button" data-filter="security" aria-pressed="false">Security</button>
+              <button class="filter-button" type="button" data-filter="messaging" aria-pressed="false">Messaging</button>
+            </div>
+            <label class="project-search"><span class="sr-only">Search projects</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg><input id="project-search" type="search" placeholder="Find a project…" autocomplete="off" /></label>
+          </div>
+          <div class="project-grid" id="project-grid">
+            {projects.map((project) => (
+              <article class:list={["project-card", project.featured && "project-featured"]} data-category={project.category} data-search={`${project.title} ${project.eyebrow} ${project.description} ${project.flow.join(' ')} ${project.scope}`}>
+                <div class="project-card-head"><span class="project-number">{project.number} <i>/</i> 09</span><span class="project-scope">{project.scope}</span></div>
+                <div class="project-card-title"><span class="project-eyebrow">{project.eyebrow}</span><h3>{project.title}</h3></div>
+                <p class="project-description">{project.description}</p>
+                <div class="flow-map" aria-label={`Technology flow: ${project.flow.join(' to ')}`}>
+                  {project.flow.map((step, index) => (
+                    <span class="flow-step"><span>{step}</span>{index < project.flow.length - 1 && <b aria-hidden="true">›</b>}</span>
+                  ))}
+                </div>
+                <div class="project-card-footer"><span class="repo-label"><span class="repo-dot"></span> PUBLIC REPOSITORY</span><a href={`https://github.com/Nithishraj19/${project.repo}`} target="_blank" rel="noreferrer" aria-label={`Open ${project.title} GitHub repository`}>View repository <span aria-hidden="true">↗</span></a></div>
+              </article>
+            ))}
+          </div>
+          <div class="no-results" id="no-results" hidden>No projects match that search. Try another keyword or select “All”.</div>
+          <div class="project-note"><span class="note-symbol">i</span><p><strong>Scope matters.</strong> Some projects are local labs and some document reference architectures. AWS architecture diagrams are not presented as live deployments unless a repository explicitly confirms that status.</p></div>
+        </section>
+
+        <section class="capabilities-section section-wrap" id="capabilities">
+          <div class="section-heading section-heading-compact">
+            <div><span class="section-kicker">TOOLS ARE THE MEANS</span><h2>Core <em>capabilities.</em></h2></div>
+            <p class="section-heading-copy">A balanced toolkit across infrastructure, delivery, runtime, observability and secure operations.</p>
+          </div>
+          <div class="skills-layout">
+            <div class="skills-callout"><div class="mini-core" aria-hidden="true"><span></span></div><span class="section-kicker">ENGINEERING MINDSET</span><h3>Make the system<br /><em>easier to operate.</em></h3><p>Automation is useful when the workflow is repeatable, the system is observable, and recovery is considered before it is needed.</p><div class="callout-index">PRINCIPLE / 004</div></div>
+            <div class="skill-groups">
+              {skillGroups.map((group, i) => (
+                <div class="skill-group"><div class="skill-group-head"><span>{String(i + 1).padStart(2, '0')}</span><h3>{group.label}</h3><span class="skill-group-line"></span></div><div class="skill-tags">{group.items.map((item) => <span>{item}</span>)}</div></div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section class="approach-section section-wrap" id="approach">
+          <div class="approach-heading"><span class="section-kicker">HOW I THINK ABOUT DELIVERY</span><h2>Reliable by <em>design.</em></h2><p>Good infrastructure is not only provisioned. It is testable, understandable, observable and recoverable.</p></div>
+          <div class="approach-steps">
+            <article><span>01 / DESIGN</span><h3>Make the path clear</h3><p>Map dependencies, access boundaries and deployment steps before automating them.</p></article>
+            <article><span>02 / AUTOMATE</span><h3>Repeat the process</h3><p>Express build, infrastructure and release workflows as reviewable code.</p></article>
+            <article><span>03 / OBSERVE</span><h3>Keep feedback visible</h3><p>Use metrics, logs, checks and actionable alerts to understand service behaviour.</p></article>
+            <article><span>04 / RECOVER</span><h3>Expect change</h3><p>Validate releases, plan rollback paths and make operational trade-offs explicit.</p></article>
+          </div>
+        </section>
+
+        <section class="contact-section section-wrap" id="contact">
+          <div class="contact-orbit" aria-hidden="true"><span></span><i></i><b></b></div>
+          <div class="contact-content"><span class="section-kicker">OPEN CHANNEL</span><h2>Let's build<br /><em>something dependable.</em></h2><p>Interested in DevOps, cloud infrastructure, CI/CD, platform engineering or observability? Let's connect.</p><div class="contact-actions"><a class="button button-primary" href="https://www.linkedin.com/in/nithish-raj-3065622b0/" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="https://github.com/Nithishraj19" target="_blank" rel="noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a></div></div>
+          <div class="contact-side"><span class="contact-side-label">QUICK LINKS</span><a href="/Nithish_Raj_DevOps_Resume.pdf" target="_blank" rel="noreferrer">Resume PDF <span>↗</span></a><a href="https://github.com/Nithishraj19" target="_blank" rel="noreferrer">GitHub repositories <span>↗</span></a><a href="https://www.linkedin.com/in/nithish-raj-3065622b0/" target="_blank" rel="noreferrer">LinkedIn profile <span>↗</span></a><div class="contact-side-foot"><span class="status-dot"></span> Built with care. Documented with intent.</div></div>
+        </section>
+      </main>
+
+      <footer class="site-footer section-wrap"><a class="footer-brand" href="#top">N<span>//</span></a><span>© {new Date().getFullYear()} Nithish Raj</span><span class="footer-motto">BUILD / SHIP / OBSERVE / IMPROVE</span><a class="back-top" href="#top">Back to top ↑</a></footer>
+    </div>
+    <script>
+      const filterButtons = [...document.querySelectorAll('[data-filter]')];
+      const projectCards = [...document.querySelectorAll('.project-card')];
+      const searchInput = document.querySelector('#project-search');
+      const emptyState = document.querySelector('#no-results');
+      let activeFilter = 'all';
+
+      function filterProjects() {
+        const query = (searchInput?.value || '').trim().toLowerCase();
+        let visible = 0;
+        projectCards.forEach((card) => {
+          const categoryMatch = activeFilter === 'all' || card.dataset.category === activeFilter;
+          const queryMatch = !query || (card.dataset.search || '').toLowerCase().includes(query);
+          const show = categoryMatch && queryMatch;
+          card.hidden = !show;
+          if (show) visible++;
+        });
+        if (emptyState) emptyState.hidden = visible > 0;
+      }
+
+      filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          activeFilter = button.dataset.filter || 'all';
+          filterButtons.forEach((item) => {
+            const active = item === button;
+            item.classList.toggle('is-active', active);
+            item.setAttribute('aria-pressed', String(active));
+          });
+          filterProjects();
+        });
+      });
+      searchInput?.addEventListener('input', filterProjects);
+
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.primary-nav');
+      menuToggle?.addEventListener('click', () => {
+        const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+        menuToggle.setAttribute('aria-expanded', String(open));
+        menuToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+        nav?.classList.toggle('is-open', open);
+      });
+      nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+        menuToggle?.setAttribute('aria-expanded', 'false');
+        menuToggle?.setAttribute('aria-label', 'Open navigation');
+        nav.classList.remove('is-open');
+      }));
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+---
+import '../styles/global.css';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0e13" />
+    <title>Page not found — Nithish Raj</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <main class="not-found section-wrap">
+      <span class="section-kicker">ERROR / 404</span>
+      <h1>That route went<br /><em>off the map.</em></h1>
+      <p>The page isn't here, but the engineering portfolio is.</p>
+      <a class="button button-primary" href="/">Return to portfolio <span aria-hidden="true">↗</span></a>
+    </main>
+  </body>
+</html>
+<style>
+  .not-found { min-height: 100vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+  .not-found h1 { margin: 20px 0 14px; font-size: clamp(48px, 8vw, 84px); line-height: 1.02; letter-spacing: -.065em; }
+  .not-found h1 em { color: var(--mint); font-style: normal; }
+  .not-found p { color: var(--muted); margin: 0 0 24px; }
+</style>
