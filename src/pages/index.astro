@@ -38,7 +38,7 @@ import { projects, skillGroups } from '../data/portfolio';
       <main id="main">
         <section class="hero section-wrap" id="top">
           <div class="hero-copy">
-            <div class="overline"><span class="status-dot"></span> ENGINEERING PORTFOLIO <span class="overline-divider">/</span> 2026</div>
+            <div class="overline"><span class="status-dot"></span> ENGINEERING PORTFOLIO</div>
             <h1>Engineer boldly.<br /><em>Operate reliably.</em></h1>
             <p class="hero-intro">I'm <strong>Nithish Raj</strong> — a DevOps engineer working across cloud infrastructure, delivery automation and operational visibility. I like systems that are understandable, repeatable and ready to recover.</p>
             <div class="hero-actions">
@@ -47,18 +47,16 @@ import { projects, skillGroups } from '../data/portfolio';
             </div>
             <div class="hero-meta">
               <div><span class="meta-label">FOCUS</span><span>DevOps · AWS · CI/CD</span></div>
-              <div><span class="meta-label">BASE</span><span>Chennai, India</span></div>
             </div>
           </div>
 
           <div class="hero-visual" aria-label="JARVIS-inspired arc reactor and delivery pipeline visual" role="group">
-            <div class="visual-topline"><span>J.A.R.V.I.S. / CORE</span><span class="visual-live"><i></i> SYSTEMS ONLINE</span></div>
+            <div class="visual-topline visual-topline-status"><span class="visual-live"><i></i> SYSTEMS ONLINE</span></div>
             <div class="reactor-stage">
               <div class="reactor-grid" aria-hidden="true"></div>
               <div class="reactor-orbit reactor-orbit-one" aria-hidden="true"></div><div class="reactor-orbit reactor-orbit-two" aria-hidden="true"></div>
               <img class="reactor-art" src="/arc-reactor.webp" alt="Futuristic arc reactor with a bright blue energy core, metallic graphite and gold rings, and restrained red accents" width="230" height="222" fetchpriority="high" />
               <span class="orbit-node node-one" aria-hidden="true"></span><span class="orbit-node node-two" aria-hidden="true"></span><span class="orbit-node node-three" aria-hidden="true"></span>
-              <div class="reactor-caption"><span>JARVIS SYSTEMS / 001</span><strong>Core <b>→</b> Online</strong></div>
             </div>
             <div class="visual-terminal">
               <div class="terminal-head"><span class="terminal-dots"><i></i><i></i><i></i></span><span>delivery.flow</span><span class="terminal-state">REFERENCE MODEL</span></div>
@@ -118,7 +116,7 @@ import { projects, skillGroups } from '../data/portfolio';
             <p class="section-heading-copy">A balanced toolkit across infrastructure, delivery, runtime, observability and secure operations.</p>
           </div>
           <div class="skills-layout">
-            <div class="skills-callout"><div class="mini-core" aria-hidden="true"><span></span></div><span class="section-kicker">ENGINEERING MINDSET</span><h3>Make the system<br /><em>easier to operate.</em></h3><p>Automation is useful when the workflow is repeatable, the system is observable, and recovery is considered before it is needed.</p><div class="callout-index">PRINCIPLE / 004</div></div>
+            <div class="skills-callout"><div class="mini-core" aria-hidden="true"><span></span></div><span class="section-kicker">ENGINEERING MINDSET</span><h3>Make the system<br /><em>easier to operate.</em></h3><p>Automation is useful when the workflow is repeatable, the system is observable, and recovery is considered before it is needed.</p></div>
             <div class="skill-groups">
               {skillGroups.map((group, i) => (
                 <div class="skill-group"><div class="skill-group-head"><span>{String(i + 1).padStart(2, '0')}</span><h3>{group.label}</h3><span class="skill-group-line"></span></div><div class="skill-tags">{group.items.map((item) => <span>{item}</span>)}</div></div>
